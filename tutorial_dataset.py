@@ -12,7 +12,7 @@ class MyDataset(Dataset):
 
         json_path = os.path.join(self.data_dir, 'prompt.json')
 
-        with open(json_path, 'rt', encodeing= 'utf-8') as f:
+        with open(json_path, 'rt', encoding= 'utf-8') as f:
                 self.data = json.load(f)
 
     def __len__(self):
