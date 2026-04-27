@@ -1,4 +1,4 @@
-from share import *
+# from share import *
 
 import pytorch_lightning as pl
 from torch.utils.data import DataLoader
@@ -54,7 +54,7 @@ trainer = pl.Trainer(
     devices=2, 
     strategy="ddp", 
     precision="16-mixed", 
-    callbacks=[logger],
+    callbacks=[],
     accumulate_grad_batches=16,
     max_epochs=15,
     limit_train_batches=0.5
